@@ -70,7 +70,7 @@ _doAliPay() async {
     print(response.data);
     print(response.data is String);
 
-    var aliPayResult = await aliPay(response.data);
+    var aliPayResult = await Tobias().pay(response.data);
     print(aliPayResult); //跳转到订单列表
 
     /*

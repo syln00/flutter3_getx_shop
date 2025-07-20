@@ -5,8 +5,8 @@ class HttpsClient {
   static Dio dio = Dio();
   HttpsClient() {
     dio.options.baseUrl = domain;
-    dio.options.connectTimeout = 5000; //5s
-    dio.options.receiveTimeout = 5000;
+    dio.options.connectTimeout = const Duration(milliseconds: 5000); //5s
+    dio.options.receiveTimeout = const Duration(milliseconds: 5000);
   }
 
  Future get(apiUrl) async {   

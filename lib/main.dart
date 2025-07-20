@@ -28,6 +28,9 @@ void main() {
         return GetMaterialApp(
           debugShowCheckedModeBanner: false,
           title: "Application",
+          theme: ThemeData(
+            useMaterial3: false,
+          ),
           initialRoute: AppPages.INITIAL,
           getPages: AppPages.routes,
         );
